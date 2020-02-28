@@ -1,0 +1,62 @@
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of headerData" cdkDrag>
+    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    {{movie.Name}}
+  </div>
+</div>
+<br>
+<br>
+
+
+
+<br>
+<br>
+
+<table id="customers">
+  <thead>
+    <th *ngFor="let head of headerData">{{head.DisplayName}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let body of TableData">
+      <td *ngFor="let head of headerData">{{body[head.Name]}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+<form id="formStyle">
+   <div class="form-group">
+      <label class="sr-only" for="Fname">First name</label>
+      <input type="Text" class="form-control" id="Fname" placeholder="Enter First name"  name="Fname">
+   </div>
+      <div class="form-group">
+      <label class="sr-only" for="Lname">Last name</label>
+      <input type="Text" class="form-control" id="Lname" placeholder="Enter Last name"  name="Lname">
+   </div>
+      <div class="form-group">
+      <label class="sr-only" for="Age">Age</label>
+      <input type="number" class="form-control" id="Age" placeholder="Enter Age"  name="Age">
+   </div>
+      <div class="form-group">
+      <label class="sr-only" for="PNumber">Phone Number</label>
+      <input type="number" class="form-control" id="PNumber" placeholder="Enter Phone Number"  name="PNumber">
+   </div>
+      <div class="form-group">
+      <label class="sr-only" for="Address">Address</label>
+      <input type="Text" class="form-control" id="Address" placeholder="Enter Address"  name="Address">
+   </div>
+       <div class="form-group">
+      <label class="sr-only" for="Gender">Gender</label>
+      <input type="Text" class="form-control" id="Gender" placeholder="Enter Gender"  name="Gender">
+   </div>
+</form>
+
+<br>
+<br>
+
+<button>Add </button>
+<button>Delete</button>
+<button>Update</button>
+
